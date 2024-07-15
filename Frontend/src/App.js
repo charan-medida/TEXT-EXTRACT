@@ -43,7 +43,7 @@ function App() {
     formData.append('image', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://text-extract-5a88.onrender.com/upload', formData, {
         headers: {
           'X-User-Name': 'Charan',
           'Content-Type': 'multipart/form-data',
